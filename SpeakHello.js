@@ -6,14 +6,15 @@
 // the "speak" method and which you will expose to the global context
 // See Lecture 52, part 1
 // var helloSpeaker =
+var helloSpeaker={};
 
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
 (function(window){
 var speakWord = "Hello";
 var helloSpeaker={};
 
-helloSpeaker.speak= function (name) {
-  console.log(speakWord + " " + name);
+helloSpeaker.speak= function (names) {
+  console.log(speakWord + " " + names);
 }
 // STEP 4: Rewrite the 'speak' function such that it is attached to the
 // helloSpeaker object instead of being a standalone function.
